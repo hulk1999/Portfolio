@@ -1,0 +1,22 @@
+#page-navigation-container{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#page-navigation{
+	display: inline-block;
+}
+
+.page-number{
+	display: inline-block;
+	padding: 5px 15px;
+	margin: 2px;
+	font-family: Poppins-light;
+	color: white;
+	background-color: rgb(60, 60, 60);
+}
+
+#active-page{
+	font-family: Poppins;
+	background-color: rgb(66, 134, 244);
+}

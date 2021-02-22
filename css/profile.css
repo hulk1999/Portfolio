@@ -1,0 +1,25 @@
+body{
+	background-color: rgb(240, 240, 240);
+}
+
+#menu a:nth-of-type(7){
+	color: rgb(180, 180, 180);
+}
+
+#menu a:nth-of-type(3){
+	color: white;
+}
+
+#wallpaper-container{
+	overflow: hidden;
+}
+
+#wallpaper{
+	width: 100%;
+}
+
+@media (max-width: 900px){
+	#wallpaper{
+		width: 900px;
+	}
+}

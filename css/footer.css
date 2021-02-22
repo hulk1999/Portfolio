@@ -1,0 +1,154 @@
+#footer{
+	height: 560px;
+	width: 100%;
+	color: white;
+	padding-top: 60px;
+	background-color: black;
+	position: relative;
+}
+
+#footer h1{
+	margin: 0 0 30px 8%;
+	color: white;
+}
+
+.my-address{
+	float: left;
+	margin-left: 8%;
+	width: 240px;
+}
+
+.my-address .title{
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.my-address #content{
+	font-size: 15px;
+	line-height: 27px;
+	font-family: Poppins-light;
+	margin-bottom: 15px;
+}
+
+.my-address a{
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 38px;
+	font-family: Poppins-light;
+}
+
+.contact-form{
+	width: 550px;
+	float: right;
+	margin: 0 8% 0 calc(84% - 790px);
+}
+
+.contact-form .title{
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.input-guide{
+	font-size: 13px;
+	margin: 10px 0;
+}
+.contact-column{
+	width: 46%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.contact-column:nth-of-type(2){
+	margin-right: 8%;
+}
+
+input[type=text], textarea{
+    width: calc(100% - 34px);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px;
+    color: white;
+    font-family: Poppins;
+    font-size: 13px;
+    border: 2px solid rgb(40, 40, 40);
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+input[type=text]:hover, textarea:hover{
+	border-color: rgb(200, 200, 200);
+}
+
+input[type=text]:focus, textarea:focus{
+	border-color: rgb(200, 200, 200);
+}
+
+input[type=submit]{
+	margin-top: 10px;
+	float: right;
+	border: none;
+	background-color: white;
+	height: 50px;
+	width: 170px;
+	font-family: Poppins;
+	color: rgb(20, 20, 20);
+	font-size: 16px;
+	outline: none;
+	border-radius: 2px;
+	transition: box-shadow 0.3s;
+}
+
+input[type=submit]:hover{
+	box-shadow: 0px 0px 15px white;
+}
+
+hr{
+	border: 1px solid rgb(20, 20, 20);
+}
+
+#copyright{
+	color: white;
+	font-size: 15px;
+	margin: 10px 0 0 8%;
+}
+
+@media (max-width: 1000px){
+	#footer{
+		height: 760px;
+	}
+	.my-address{
+		width: 84%;
+		margin: 0 8% 40px 8%;
+	}
+	.my-address #content{
+		float: left;
+	}
+	.my-address #icons-container{
+		float: right;
+	}
+	.contact-form{
+		width: 84%;
+		margin: 0 8% 0 8%;
+	}
+}
+
+@media (max-width: 620px){
+	#footer{
+		height: 960px;
+	}
+	.my-address #content{
+		float: none;
+	}
+	.my-address #icons-container{
+		float: none;
+	}
+	.contact-column{
+		width: 100%;
+	}
+	.contact-column:nth-of-type(2){
+		margin-bottom: 10px;
+	}
+}

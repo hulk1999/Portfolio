@@ -1,0 +1,55 @@
+#logo{
+	position: fixed;
+	top: 25px;
+	left: 8%;
+	font-family: Poppins-light;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	transition: top 0.5s;
+	z-index: 10;
+}
+
+#menu{
+ 	overflow: hidden;
+	position: fixed;
+	padding: 25px 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.5s;
+	z-index: 9;
+}
+
+#menu a{
+	float: right;
+	display: block;
+	color: rgb(180, 180, 180);
+	padding: 10px;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	transition: color 0.5s;
+}
+
+#menu a:first-of-type{
+	margin-right: 8%;
+}
+
+#menu a:last-of-type{
+	color: white;
+}
+
+#menu a:hover{
+	color: rgb(240, 240, 240);
+}
+
+#menu-small-icon{
+	position: fixed;
+	right: 40px;
+	top: 32px;
+	font-size: 20px;
+	color: white;
+	display: none;
+	z-index: 10;
+	transition: top 0.5s;
+}

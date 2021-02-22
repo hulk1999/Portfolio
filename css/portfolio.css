@@ -1,0 +1,30 @@
+#wallpaper-container{
+	overflow: hidden;
+}
+
+#wallpaper{
+	width: 100%;
+}
+
+#page-name{
+	color: rgb(60, 60, 60);
+	margin: 40px 0 10px 0;
+	text-align: center;
+}
+
+#page-break{
+	width: 200px;
+	height: 1px;
+	margin: auto;
+	margin-bottom: 10px;
+	border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+#introduction{
+	text-align: center;
+	width: 100%;
+	max-width: 440px;
+	color: rgb(100, 100, 100);
+	margin: auto;
+	margin-bottom: 40px;
+}
