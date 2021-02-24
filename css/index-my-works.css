@@ -14,29 +14,14 @@
 
 .my-works .content-img{
 	position: relative;
-	left: -220px;
-	width: 200%;
+	width: 100%;
 	filter: brightness(60%);
 	transition: all 1s;
 }
 
-.my-works .container:nth-of-type(1) .content-img{
-	width: 210%;
-}
-
-.my-works .container:nth-of-type(3) .content-img{
-	width: 160%;
-	left: -130px;
-}
-
-.my-works .container:nth-of-type(4) .content-img{
-	width: 160%;
-	left: -120px;
-}
-
-.my-works .content-img:hover{
+.my-works .container:hover a .content-img{
 	transform: scale(1.1, 1.1);
-	filter: brightness(30%);
+	filter: brightness(20%);
 }
 
 .my-works .text1{
@@ -58,75 +43,20 @@
 	pointer-events: none;
 }
 
-.see-more-button{
-	width: 110px;
-	margin-top: 30px;
-	margin-left: calc(50% - 55px);
-	padding: 13px 0;
+.my-works .text3{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+  right: 10%;
+	font-size: 16px;
 	color: white;
-	background-color: black;
-	text-align: center;
-	box-shadow: 0px 0px 10px rgb(200, 200, 200);
-	transition: all 0.5s;
+	pointer-events: none;
+  opacity: 0;
+  transition: all 1s;
 }
 
-#popup-background{
-	background-color: rgba(0, 0, 0, 0.6);
-	top: 0; left: 0;
-	width: 100vw;
-	height: 100vh;
-	visibility: hidden;
-	position: fixed;
-	z-index: 30;
-}
-
-.popup-img{
-	position: fixed;
-	height: 80vh;
-	top: 50%;
-	left: 50%;
-    transform: translate(-50%, -50%);
-	z-index: 31;
-	visibility: hidden;
-}
-
-.img-index{
-	color: rgb(220, 220, 220);
-	position: fixed;
-	bottom: 5%;
-	left: 50%;
-    transform: translate(-50%, 0);
-	z-index: 31;
-	visibility: hidden;
-}
-
-.fa-caret-right, .fa-caret-left{
-	width: 20px;
-	line-height: 500px;
-	font-size: 50px;
-	color: rgb(140, 140, 140);
-	position: fixed;
-	top: 50%;
-	transform: translate(0, -50%);
-	z-index: 31;
-	visibility: hidden;
-	display: block;
-}
-
-.fa-caret-left{
-	text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
-	left: 20px;
-	padding-right: 50px;
-}
-
-.fa-caret-right{
-	text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
-	right: 20px;
-	padding-left: 50px;
-}
-
-.fa-caret-right:hover, .fa-caret-left:hover{
-	color: white;
+.my-works .container:hover .text3{
+  opacity: 1;
 }
 
 @media (max-width: 1100px){
@@ -145,10 +75,6 @@
 	}
 	.my-works .text2{
 		font-size: 40px;
-	}
-	.popup-img{
-		width: 100%;
-		height: auto;
 	}
 }
 

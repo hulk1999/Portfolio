@@ -1,11 +1,11 @@
 #what-i-do{
-	height: 250px;
+	height: 350px;
 }
 
 #what-i-do .column{
 	float: left;
-    width: 28%;
-    padding: 1%;
+  width: 28%;
+  padding: 1%;
 }
 
 #what-i-do .column:first-of-type{
@@ -24,10 +24,10 @@
 	margin: 20px 0 20px 0;
 }
 
-#what-i-do p{
+#what-i-do p, #what-i-do li{
 	font-size: 16px;
-	font-family: Poppins-light;
-	color: rgb(140, 140, 140);
+	font-family: Poppins;
+	color: rgb(60, 60, 60);
 }
 
 @media (max-width: 600px){
@@ -36,10 +36,10 @@
 	}
 	#what-i-do .column{
 		float: none;
-    	width: 84%;
-    	padding-left: 8%;
+    width: 84%;
+    padding-left: 8%;
 	}
 	#what-i-do .column:last-of-type{
-    	margin-bottom: 60px;
+    margin-bottom: 60px;
 	}
 }

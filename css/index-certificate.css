@@ -1,0 +1,45 @@
+#cert-list{
+	position: relative;
+	width: 84%;
+	height: 460px;
+	left: 8%;
+}
+
+#cert-list .element{
+	width: 290px;
+  height: 200px;
+	margin-right: calc(33.34% - 387px);
+  margin-bottom: 30px;
+	float: left;
+	overflow: hidden;
+}
+
+#cert-list .element:last-of-type, #cert-list .element:nth-of-type(4){
+	margin-right: 0;
+}
+
+#cert-list .element .picture-frame{
+  position: relative;
+	width: 100%;
+  height: 100%;
+	overflow: hidden;
+}
+
+#cert-list .element img{
+	width: 100%;
+}
+
+#cert-list .element .title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}

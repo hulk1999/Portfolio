@@ -2,6 +2,7 @@
 	position: relative;
 	width: 100%;
 	height: 560px;
+  margin-top: 80px;
 	overflow: hidden;
 	background-image: url('../images/index/pattern-topo.png');
 }
@@ -14,12 +15,14 @@
 
 #worked h1{
 	width: 100%;
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 #worked .list{
 	position: absolute;
 	left: 8%;
-	top: 200px;
+	top: 170px;
 	width: 84%;
 }
 
@@ -77,17 +80,10 @@
 
 #worked .icons{
 	position: absolute;
-	left: 40px;
-	bottom: 85px;
-	font-size: 25px;
-}
-
-#worked .icons a{
-	color: white;
-}
-
-#worked .icons i{
-	margin: 10px;
+	left: 15px;
+	bottom: 65px;
+	font-size: 16px;
+  color: white;
 }
 
 @media (max-width: 1200px){

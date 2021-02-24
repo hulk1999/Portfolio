@@ -1,24 +1,26 @@
 .blog{
 	position: relative;
 	width: 84%;
-	height: 500px;
+	height: 900px;
 	left: 8%;
 }
 
 .blog .column{
-	width: 350px;
-	margin-right: calc(50% - 525px);
+	width: 380px;
+  height: 430px;
+	margin-right: calc(50% - 570px);
 	float: left;
 	overflow: hidden;
 }
 
-.blog a:last-of-type .column{
+.blog a:last-of-type .column, .blog a:nth-of-type(3) .column{
 	margin-right: 0;
 }
 
 .blog .column .container{
 	width: 100%;
-	margin-bottom: 20px;
+  height: 230px;
+	margin-bottom: 10px;
 	overflow: hidden;
 }
 
@@ -27,7 +29,7 @@
 }
 
 .date{
-	line-height: 40px;
+	line-height: 30px;
 	color: rgb(120, 120, 120);
 }
 
@@ -40,9 +42,9 @@
 
 .blog .paragraph{
 	font-size: 15px;
-	font-family: Poppins-light;
-	color: rgb(140, 140, 140);
-	margin: 10px 0 10px 0;
+	font-family: Poppins;
+	color: rgb(90, 90, 90);
+	margin: 5px 0 10px 0;
 }
 
 @media (max-width: 1330px){
