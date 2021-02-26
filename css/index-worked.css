@@ -87,9 +87,6 @@
 }
 
 @media (max-width: 1200px){
-	#worked{
-		height: 900px;
-	}
 	#worked .element{
 		width: 50%;
 	}
@@ -97,7 +94,7 @@
 
 @media (max-width: 650px){
 	#worked{
-		height: 1580px;
+		height: 900px;
 	}
 	#worked .element{
 		width: 100%;

@@ -1,7 +1,8 @@
 .blog{
 	position: relative;
 	width: 84%;
-	height: 1300px;
+	height: auto;
+  overflow: auto;
 	left: 8%;
 }
 
@@ -13,7 +14,7 @@
 	overflow: hidden;
 }
 
-.blog a:last-of-type .column, .blog a:nth-of-type(3) .column, .blog a:nth-of-type(6) .column{
+.blog a:nth-of-type(3n+0) .column{
 	margin-right: 0;
 }
 
@@ -47,51 +48,34 @@
 	margin: 5px 0 10px 0;
 }
 
-@media (max-width: 1330px){
-	.blog{
-		height: calc(650px + 33vw);
-	}
+@media (max-width: 1390px){
 	.blog .column{
 		width: 46%;
-		margin: 0 0 40px 0;
+		margin: 0 0 30px 0;
 	}
-	.blog a:first-of-type .column{
-		margin-right: 8%;
-	}
-
+  .blog a:nth-of-type(2n+1) .column{
+    margin-right: 8%;
+  }
+  .blog a:nth-of-type(2n0) .column{
+    margin-right: 0;
+  }
 	.blog a:last-of-type .column{
 		margin-left: 27%;
 	}
 }
 
 @media (max-width: 800px){
-	.blog{
-		height: 1350px;
+	.blog a .column{
+		width: 100%;
+		margin: 0 0 20px 0;
 	}
-	.blog a:last-of-type .column{
-		margin: 0 0 40px calc(50% - 200px);
-	}
-	.blog .column{
-		width: 400px;
-		margin: 0 0 40px calc(50% - 200px);
+  .blog a:nth-of-type(2n+1) .column{
+    margin-right: 0;
+  }
+  .blog a:last-of-type .column{
+		margin-left: 0;
 	}
 	.blog .column .container{
 		height: 250px;
-	}
-}
-
-@media (max-width: 600px){
-	.blog{
-		height: 1300px;
-	}
-	.blog a:last-of-type .column{
-		margin: 0 0 40px calc(50% - 160px);
-	}
-	.blog .column{
-		width: 320px;
-		margin: 0 0 40px calc(50% - 160px);
-	}
-	.blog .column .container{
-		height: 200px;
 	}
 }

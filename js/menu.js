@@ -63,7 +63,7 @@ function menuShowSmall(){
 	document.getElementById("menu").style.backgroundColor = "black";
 	var element = document.getElementsByClassName("menu-link");
 	setTimeout(function(){
-		element[6].style.visibility = "visible";
+		element[5].style.visibility = "visible";
 		for (var i = 0; i <= 5; i++){
 			element[i].style.display = "block";
 			element[i].style.position = "fixed";
