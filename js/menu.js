@@ -47,8 +47,8 @@ function menuShowFull(){
 	document.getElementById("menu").style.height = "40px";
 	document.getElementById("menu-small-icon").style.display = "none";
 	var element = document.getElementsByClassName("menu-link");
-	element[6].style.visibility = "visible";
-	for (var i = 0; i <= 6; i++){
+	element[5].style.visibility = "visible";
+	for (var i = 0; i <= 5; i++){
 		element[i].style.float = "right";
 		element[i].style.display = "block";
 		element[i].style.position = "static";
@@ -64,7 +64,7 @@ function menuShowSmall(){
 	var element = document.getElementsByClassName("menu-link");
 	setTimeout(function(){
 		element[6].style.visibility = "visible";
-		for (var i = 0; i <= 6; i++){
+		for (var i = 0; i <= 5; i++){
 			element[i].style.display = "block";
 			element[i].style.position = "fixed";
 			element[i].style.width = "100%";
@@ -79,8 +79,8 @@ function menuHide(){
 	document.getElementById("menu").style.height = "40px";
 	document.getElementById("menu-small-icon").style.display = "block";
 	var element = document.getElementsByClassName("menu-link");
-	element[6].style.visibility = "hidden";
-	for (var i = 0; i <= 6; i++){
+	element[5].style.visibility = "hidden";
+	for (var i = 0; i <= 5; i++){
 		element[i].style.display = "none";
 	}
 	show = false;

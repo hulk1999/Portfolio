@@ -1,7 +1,7 @@
 .blog{
 	position: relative;
 	width: 84%;
-	height: 900px;
+	height: 1300px;
 	left: 8%;
 }
 
@@ -13,7 +13,7 @@
 	overflow: hidden;
 }
 
-.blog a:last-of-type .column, .blog a:nth-of-type(3) .column{
+.blog a:last-of-type .column, .blog a:nth-of-type(3) .column, .blog a:nth-of-type(6) .column{
 	margin-right: 0;
 }
 

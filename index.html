@@ -1,10 +1,3 @@
-<!--
-Sources:
-Home page: http://themestarz.net/html/scrape
-Home page header: https://creativemarket.com/ThemeDevisers/1312269-ResumeCV/screenshots/#screenshot1
-Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-wordpress-photography-blog-template.jpg
--->
-
 <!DOCTYPE html>
 <html>
 
@@ -39,13 +32,12 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
 
 <a href="index.html"><div id="logo">HUNG NGUYEN</div></a>
 <div id="menu">
-  <a href="profile.html" class="menu-link">ABOUT ME</a> 
-  <a href="blog.html" class="menu-link">CERTIFICATES</a>
-  <a href="profile.html" class="menu-link">ACTIVITIES</a>
+  <a href="#activity-section" class="menu-link">ACTIVITIES</a>
+  <a href="#certificate-section" class="menu-link">CERTIFICATES</a>
   <a href="#worked" class="menu-link">EXPERIENCE</a>
-  <a href="portfolio.html" class="menu-link">MY WORKS</a>
+  <a href="#my-works-section" class="menu-link">MY WORKS</a>
   <a href="#what-i-do-section" class="menu-link">WHAT I DO</a>
-  <a href="index.html" class="menu-link">HOME</a>
+  <a href="#" class="menu-link">HOME</a>
 </div>
 <div id="menu-small-icon"><i class="fas fa-bars"></i></div>
 
@@ -61,8 +53,8 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
 			<img src="./images/index/avatar.jpg">
 		</div>
 		<hr>
-		<div class="header-skill">B.Eng. , 2020. GPA: 8.18<br/>- FPT University</div>
-		<div class="header-skill">Vice president, 2019<br/>- FCode Academic Club</div>
+		<div class="header-skill">B.Eng. , 2020. GPA: 8.18<br/>- <a href="https://daihoc.fpt.edu.vn/">FPT University</a></div>
+		<div class="header-skill">Vice president, 2019<br/>- <a href="https://www.facebook.com/fcodefpt/">FCode Academic Club</a></div>
 	</div>
 
 	<div id="header-right-column">
@@ -76,9 +68,11 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
       <div class="label">Phone</div>
 			<div class="content">+84 847 641 376</div>
       <div class="label">Address</div>
-			<div class="content">Go Vap, HCM City</div>
+			<div class="content">Go Vap Dist., HCM City</div>
       <div class="label">Language</div>
 			<div class="content">Vietnamese, English</div>
+      <div id="description">A geek at hand-coding, probability and interesting algorithms. Enjoys
+        travelling and exploring the world.</div>
 		</div>
 	</div>
 
@@ -119,19 +113,23 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
 		<p>I love the experience of sharing knowledge and providing guidence.</p>
     <p style="margin-bottom: 4px;">Instructed courses:</p>
     <ul style="margin-top: 0;">
-      <li>Programming Fundamentals - <span style="font-style: italic;">C</span></li>
+      <li><a href="https://www.facebook.com/media/set/?vanity=fcodefpt&set=a.2266139553602611">
+        Programming Fundamentals - <span style="font-style: italic;">C</span>
+      </a></li>
       <li>Machine Learning - <span style="font-style: italic;">Octave, Python</span></li>
     </ul>
     <p style="margin-bottom: 4px;">Workshops:</p>
     <ul style="margin-top: 0;">
-      <li>A Look into AI - <span style="font-style: italic;">FCode Academic Club</span></li>
+      <li><a href="https://www.facebook.com/fcodefpt/posts/2446803005536264">
+        A Look into AI - <span style="font-style: italic;">FCode Academic Club</span>
+      </a></li>
     </ul>
 	</div>
 </div>
 
 <!-- --------------------------------------------------------------------------------------------- -->
 
-<a href="portfolio.html"><h1 id="my-works-section" class="reveal-animation link">My Works</h1></a>
+<a><h1 id="my-works-section" class="reveal-animation link">My Works</h1></a>
 <div class="my-works">
 	<div class="container">
     <a href="https://github.com/petite-hero"><img class="content-img" src="./images/index/img-01.png"></a>
@@ -160,7 +158,7 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
     <div class="text1">Machine Learning</div>
     <div class="text2 reveal-animation">Handwritten Digits Classifier</div>
     <div class="text3">
-      <p>Demonstration for AI workshop at FCode club; Teaching materials for machine learning course.
+      <p>Demonstration for an AI workshop at FCode club; Teaching materials for machine learning course.
          Hand-coded neural network.</p>
       <p>Duration: 1 months | 2019</p>
       <p>Personal Project</p>
@@ -192,7 +190,7 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
     <div class="text2 reveal-animation">TheMathematical<br/>OperationsExecutor</div>
     <div class="text3">
       <p>Final project for C course at FCode club, including a calculator, high degree equation solver,
-         base converter and a mini dinosaur game</p>
+         base converter and a mini dinosaur game.</p>
       <p>Duration: 3 months | 2017</p>
       <p>Team of 2</p>
     </div>
@@ -281,7 +279,7 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
     <a href="./images/index/cert-04.jpg">
     <div class="picture-frame">
       <img class="picture" src="./images/index/cert-04.jpg">
-      <div class="title">1st Prize, 2018<br/>- IT Provicial Exellence Student</div>
+      <div class="title">High School 1st Prize, 2018<br/>- IT Provicial Exellence Student</div>
     </div>
     </a>
   </div>
@@ -314,7 +312,7 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
 
 <!-- --------------------------------------------------------------------------------------------- -->
 
-<a href="blog.html"><h1 id="activity-section" class="reveal-animation link">Activities</h1></a>
+<a><h1 id="activity-section" class="reveal-animation link">Activities</h1></a>
 <div class="blog">
     <a href="https://www.facebook.com/fcodefpt/">
     <div class="column">
@@ -350,7 +348,7 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
         <div class="container"><img src="./images/index/blog-04.jpg"></div>
         <div class="date">2019</div>
         <div class="title reveal-animation link">Speaker - AI Workshop</div>
-        <div class="paragraph">A Look into AI, held at FCode club, introduces a general view at the AI field,
+        <div class="paragraph">A Look into AI, held at FCode club, introduced a general view at the AI field,
           techniques, learning paths and career paths to newcomers.</div>
     </div>
     </a>
@@ -359,8 +357,8 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
         <div class="container"><img src="./images/index/blog-05.jpg"></div>
         <div class="date">2019</div>
         <div class="title reveal-animation link">Student, Tourguide - SITEC</div>
-        <div class="paragraph">Learned tourguilding skills; history and food knowledge.
-          Guided 1 motorbike tour with an US student.</div>
+        <div class="paragraph">This course made me a more Vietnamese Vietnamese. Learned tourguilding skills,
+          history, food knowledge and guided a cool motorbike tour.</div>
     </div>
     </a>
     <a>
@@ -372,6 +370,33 @@ Blog: https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/goblog-minimal-word
         HCM - Da Lat, Chua Chan Mt., Ba Den Mt.</div>
     </div>
     </a>
+    <a href="https://www.facebook.com/media/set/?set=a.227788590721228">
+      <div class="column">
+          <div class="container"><img src="./images/index/blog-07.jpg"></div>
+          <div class="date">2013-2017</div>
+          <div class="title reveal-animation link">Pencil Carving</div>
+          <div class="paragraph">It was cool back in high school. I love spending time refining these
+            little pieces.</div>
+      </div>
+      </a>
+      <a href="./images/index/blog-11.jpg">
+      <div class="column">
+          <div class="container"><img src="./images/index/blog-11.jpg"></div>
+          <div class="date">Still in practice</div>
+          <div class="title reveal-animation link">Drawing</div>
+          <div class="paragraph">Sometimes my right brain just has a craving for some colors. I'm trying to
+            learn this in a more systematic way.</div>
+      </div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=Ce55VoOFdqA">
+      <div class="column">
+        <div class="container"><img src="./images/index/blog-09.png"></div>
+        <div class="date">Still in practice</div>
+        <div class="title reveal-animation link">Piano</div>
+        <div class="paragraph">Just an amateur around the corner. It was nice to hear my favourite pieces
+          on the piano keys.</div>
+      </div>
+      </a>
 </div>
 
 <!-- --------------------------------------------------------------------------------------------- -->

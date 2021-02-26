@@ -1,6 +1,6 @@
 
 // for menu elements
-var activePart = 7;
+var activePart = 6;
 
 window.addEventListener("scroll", handleScroll);
 handleScroll();
@@ -9,12 +9,12 @@ handleScroll();
 function handleScroll(){
 
 	// for menu highlighting
-	var tmpActivePart = 7;
-	if (document.getElementById("what-i-do-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 6;
-	if (document.getElementById("my-works-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 5;
-	if (document.getElementById("worked-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 4;
-	if (document.getElementById("activity-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 3;
+	var tmpActivePart = 6;
+	if (document.getElementById("what-i-do-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 5;
+	if (document.getElementById("my-works-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 4;
+	if (document.getElementById("worked-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 3;
 	if (document.getElementById("certificate-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 2;
+  if (document.getElementById("activity-section").getBoundingClientRect().top < screen.height*0.5) tmpActivePart = 1;
 	
 	if (activePart != tmpActivePart){
 		document.getElementsByClassName("menu-link")[activePart-1].style.color = "rgb(180, 180, 180)";
@@ -23,7 +23,7 @@ function handleScroll(){
 	}
 
 	// for reveal animations
-    for (var i = 1; i <= 20; i++){
+    for (var i = 1; i <= 23; i++){
     if (document.getElementsByClassName("reveal-animation")[i-1].getBoundingClientRect().top < screen.height - 200)
         document.getElementsByClassName("reveal-animation")[i-1].classList.add("in");
     }

@@ -52,6 +52,14 @@
 	font-weight: bold;
 }
 
+.header-skill a{
+	color: rgb(180, 180, 180);
+}
+
+.header-skill a:hover{
+	text-decoration: underline;
+}
+
 #header-right-column{
 	position: absolute;
 	top: 90px;
@@ -113,6 +121,13 @@
 	float: left;
 	margin-bottom: 10px;
 	width: calc(100% - 230px);
+}
+
+#header-personal-information #description{
+	float: left;
+	margin: 15px 40px 10px 40px;
+  font-style: italic;
+  font-family: Poppins-light;
 }
 
 @media (max-width: 1200px){
