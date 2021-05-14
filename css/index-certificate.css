@@ -11,7 +11,9 @@
   height: 200px;
 	margin-right: calc(33.34% - 387px);
   margin-bottom: 30px;
+  border: 4px solid rgb(50, 50, 50);
   box-shadow: 3px 3px 5px rgb(50, 50, 50);
+  box-sizing: border-box;
 	float: left;
 	overflow: hidden;
 }
