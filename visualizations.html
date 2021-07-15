@@ -52,7 +52,7 @@ Shoutout to <a href="https://www.storytellingwithdata.com/" id="book-link"><i>st
 <!-- ---------------------------------------------------------------------------------------- -->
 
 <div class="blog">
-    <a href="#" onclick="popupImg('frequently-used-visualizations.png')">
+    <a href="#0" onclick="popupImg(0)">
     <div class="column">
         <div class="container"><img src="./images/visualizations/frequently-used-visualizations.png"></div>
         <div class="date">Matplotlib</div>
@@ -60,7 +60,7 @@ Shoutout to <a href="https://www.storytellingwithdata.com/" id="book-link"><i>st
         <div class="paragraph">Simplicity is the way. Death to pie chart!</div>
     </div>
     </a>
-    <a href="#" onclick="popupImg('simple-line - Copy.png')">
+    <a href="#" onclick="popupImg(1)">
     <div class="column">
         <div class="container"><img src="./images/visualizations/simple-line.png"></div>
         <div class="date">Matplotlib</div>
@@ -68,7 +68,7 @@ Shoutout to <a href="https://www.storytellingwithdata.com/" id="book-link"><i>st
         <div class="paragraph">One series with some annotations.</div>
     </div>
     </a>
-    <a href="#" onclick="popupImg('forecast.png')">
+    <a href="#0" onclick="popupImg(2)">
     <div class="column">
         <div class="container"><img src="./images/visualizations/forecast.png"></div>
         <div class="date">Matplotlib & Powerpoint</div>
@@ -76,7 +76,7 @@ Shoutout to <a href="https://www.storytellingwithdata.com/" id="book-link"><i>st
         <div class="paragraph">Plotting with Matplotlib then adding details with MS Powerpoint.</div>
     </div>
     </a>
-    <a href="#" onclick="popupImg('ab-test.png')">
+    <a href="#0" onclick="popupImg(3)">
     <div class="column">
         <div class="container"><img src="./images/visualizations/ab-test.png"></div>
         <div class="date">Matplotlib</div>
@@ -97,25 +97,9 @@ Shoutout to <a href="https://www.storytellingwithdata.com/" id="book-link"><i>st
 <!-- popup images -->
 <div id="popup-background" onclick="closePopup();"></div>
 <img id="popup-img">
-
-<script>
-
-  const PATH = "./images/visualizations/";
-  const backgroundEl = document.getElementById("popup-background");
-  const imgEl = document.getElementById("popup-img");
-  
-  function popupImg(imgName){
-    backgroundEl.style.visibility = "visible";
-    imgEl.src = PATH + imgName;
-    imgEl.style.visibility = "visible";
-  }
-
-  function closePopup(){
-    backgroundEl.style.visibility = "hidden";
-    imgEl.style.visibility = "hidden";
-  }
-
-</script>
+<div id="img-name"></div>
+<i class="fas fa-caret-right" onclick="showNextImg(1)"></i>
+<i class="fas fa-caret-left" onclick="showNextImg(-1)"></i>
 
 <!-- --------------------------------------------------------------------------------------------- -->
 
@@ -126,6 +110,7 @@ Shoutout to <a href="https://www.storytellingwithdata.com/" id="book-link"><i>st
 <!-- --------------------------------------------------------------------------------------------- -->
 
 <script src="./js/menu.js"></script>
+<script src="./js/visualizations.js"></script>
 
 <!-- --------------------------------------------------------------------------------------------- -->
 
