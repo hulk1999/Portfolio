@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<head>
+
+	<title>Data Visualizations - Hung Nguyen</title>
+
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link type="text/css" rel="stylesheet" href="./font-awesome/css/all.min.css">
+	<link type="text/css" rel="stylesheet" href="./css/general.css">
+	<link type="text/css" rel="stylesheet" href="./css/menu.css">
+	<link type="text/css" rel="stylesheet" href="./css/index.css">
+  <link type="text/css" rel="stylesheet" href="./css/index-blog.css">
+  <link type="text/css" rel="stylesheet" href="./css/footer.css">
+
+  <link type="text/css" rel="stylesheet" href="./css/visualizations.css">
+
+</head>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<body>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<a href="index.html"><div id="logo">HUNG NGUYEN</div></a>
+<div id="menu">
+  <a href="index.html#activity-section" class="menu-link">ACTIVITIES</a>
+  <a href="index.html#certificate-section" class="menu-link">CERTIFICATES</a>
+  <a href="index.html#worked" class="menu-link">EXPERIENCE</a>
+  <a href="index.html#my-works-section" class="menu-link">MY WORKS</a>
+  <a href="index.html#what-i-do-section" class="menu-link">WHAT I DO</a>
+  <a href="index.html" class="menu-link">HOME</a>
+</div>
+<div id="menu-small-icon"><i class="fas fa-bars"></i></div>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<div id="wallpaper-container">
+    <img src="./images/visualizations/data.jpg" id="wallpaper">
+</div>
+
+<h1 id="page-name">Data Visualizations</h1>
+<div id="page-break"></div>
+<div id="introduction">Welcome to my visualization showcase.<br>
+Shoutout to <a href="https://www.storytellingwithdata.com/" id="book-link"><i>storytelling with data</i></a> &nbsp;for much guidance on the work.</div>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+<div class="blog">
+    <a href="#" onclick="popupImg('frequently-used-visualizations.png')">
+    <div class="column">
+        <div class="container"><img src="./images/visualizations/frequently-used-visualizations.png"></div>
+        <div class="date">Matplotlib</div>
+        <div class="title link">Frequently Used Visualization</div>
+        <div class="paragraph">Simplicity is the way. Death to pie chart!</div>
+    </div>
+    </a>
+    <a href="#" onclick="popupImg('simple-line - Copy.png')">
+    <div class="column">
+        <div class="container"><img src="./images/visualizations/simple-line.png"></div>
+        <div class="date">Matplotlib</div>
+        <div class="title link">Simple Line Charts</div>
+        <div class="paragraph">One series with some annotations.</div>
+    </div>
+    </a>
+    <a href="#" onclick="popupImg('forecast.png')">
+    <div class="column">
+        <div class="container"><img src="./images/visualizations/forecast.png"></div>
+        <div class="date">Matplotlib & Powerpoint</div>
+        <div class="title link">Line Chart with Forecast Data</div>
+        <div class="paragraph">Plotting with Matplotlib then adding details with MS Powerpoint.</div>
+    </div>
+    </a>
+    <a href="#" onclick="popupImg('ab-test.png')">
+    <div class="column">
+        <div class="container"><img src="./images/visualizations/ab-test.png"></div>
+        <div class="date">Matplotlib</div>
+        <div class="title link">A/B Test Results with Z-Test</div>
+        <div class="paragraph">Visualizing A/B Test Results: z-score, Observed p-value & Observed Power.</div>
+    </div>
+    </a>
+    <a>
+    <div class="column">
+        <div class="container"><img src="./images/visualizations/update.png"></div>
+        <div class="date">Updating...</div>
+        <div class="title link"></div>
+        <div class="paragraph"></div>
+    </div>
+    </a>
+</div>
+
+<!-- popup images -->
+<div id="popup-background" onclick="closePopup();"></div>
+<img id="popup-img">
+
+<script>
+
+  const PATH = "./images/visualizations/";
+  const backgroundEl = document.getElementById("popup-background");
+  const imgEl = document.getElementById("popup-img");
+  
+  function popupImg(imgName){
+    backgroundEl.style.visibility = "visible";
+    imgEl.src = PATH + imgName;
+    imgEl.style.visibility = "visible";
+  }
+
+  function closePopup(){
+    backgroundEl.style.visibility = "hidden";
+    imgEl.style.visibility = "hidden";
+  }
+
+</script>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+<div id="footer">
+  <div id="copyright">&copy; 2021 Hung Nguyen. Not many rights reserved.</div>
+</div>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+<script src="./js/menu.js"></script>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+</body>
+
+</html>
