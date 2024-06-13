@@ -1,39 +1,48 @@
 #worked{
 	position: relative;
 	width: 100%;
-	height: 560px;
-  margin-top: 80px;
-	overflow: hidden;
+}
+
+#worked-background-container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	background-image: url('../images/index/pattern-topo.png');
+	z-index: -1;
 }
 
 #worked .filter{
 	position: absolute;
 	opacity: 0.95;
 	width: 100%;
+	height: 100%;
 }
 
 #worked h1{
 	width: 100%;
-  margin-top: 60px;
-  margin-bottom: 50px;
+	padding-top: 40px;
 }
 
 #worked .list{
-	position: absolute;
-	left: 8%;
-	top: 170px;
-	width: 84%;
+	margin: 20px calc(8% - 30px) 40px calc(8% - 30px);
+	width: calc(84% + 60px);
+	text-align: center;
 }
 
 #worked .element{
-	width: 25%;
-	float: left;
-	margin-bottom: 50px;
+	display: inline-block;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 30px;
+	padding: 0 25px;
 }
 
+#worked .element:last-of-type{
+    margin-right: 0;
+ }
+
 #worked .title{
-	margin-bottom: 5px;
+	display: inline-block;
 	text-align: center;
 	font-size: 19px;
 	font-weight: bold;
@@ -49,54 +58,12 @@
 #worked .picture-frame{
 	position: relative;
 	margin: auto;
-	width: 218px;
-	height: 218px;
+	width: 160px;
+	height: 160px;
 	overflow: hidden;
-	border-radius: 200px;
+	border-radius: 180px;
 }
 
 #worked .picture{
 	width: 100%;
-}
-
-.worked-decoration{
-	width: 218px;
-	height: 500px;
-	position: absolute;
-	bottom: -175px;
-	transition: all 0.25s;
-}
-
-.worked-decoration:hover{
-	bottom: 0px;
-}
-
-.worked-decoration-img{
-	opacity: 0.6;
-	border-radius: 200px;
-	position: absolute;
-	bottom: 0px;
-}
-
-#worked .icons{
-	position: absolute;
-	left: 15px;
-	bottom: 65px;
-	font-size: 16px;
-  color: white;
-}
-
-@media (max-width: 1200px){
-	#worked .element{
-		width: 50%;
-	}
-}
-
-@media (max-width: 650px){
-	#worked{
-		height: 900px;
-	}
-	#worked .element{
-		width: 100%;
-	}
 }

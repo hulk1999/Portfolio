@@ -63,7 +63,7 @@
 
 @media (max-width: 1100px){
   #cert-list .element:nth-of-type(2n+1){
-    margin-right: min(100px, calc(100% - 580px));
+    margin-right: min(120px, calc(100% - 580px));
     margin-bottom: 40px;
   }
 	#cert-list .element:nth-of-type(2n+0){
@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 730px){
+@media (max-width: 750px){
   #cert-list .element:nth-of-type(1n+0){
     margin-left: calc(50% - 145px);
     margin-right: calc(50% - 145px);
