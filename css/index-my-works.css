@@ -5,7 +5,7 @@
 .my-works{
 	position: relative;
 	margin-bottom: 30px;
-	height: 80vw;
+	height: 120vw;
 }
 
 .my-works .container{
@@ -19,7 +19,7 @@
 .my-works .content-img{
 	position: relative;
 	width: 100%;
-	filter: brightness(60%);
+	filter: brightness(50%);
 	transition: all 1s;
 }
 
@@ -71,7 +71,7 @@
 
 @media (max-width: 900px){
 	.my-works{
-		height: 174vw;
+		height: 290vw;
 	}
 	.my-works .container{
 		width: 50%;
@@ -91,7 +91,7 @@
 
 @media (max-width: 600px){
 	.my-works{
-		height: 600vw;
+		height: 900vw;
 	}
 	.my-works .container{
 		width: 100%;

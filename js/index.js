@@ -23,7 +23,7 @@ function handleScroll(){
 	}
 
 	// for reveal animations
-    for (var i = 1; i <= 23; i++){
+    for (var i = 1; i <= 26; i++){
     if (document.getElementsByClassName("reveal-animation")[i-1].getBoundingClientRect().top < screen.height - 200)
         document.getElementsByClassName("reveal-animation")[i-1].classList.add("in");
     }

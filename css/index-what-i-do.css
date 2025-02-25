@@ -4,8 +4,12 @@
 
 #what-i-do .column{
 	float: left;
-  width: 28%;
-  padding: 1% 1% 10px 1%;
+  width: 30%;
+  padding: 0.5% 1% 10px 1%;
+}
+
+#what-i-do .column:nth-of-type(2){
+  width: 24%;
 }
 
 #what-i-do .column:first-of-type{
@@ -21,22 +25,14 @@
 	font-size: 20px;
 	font-weight: bold;
 	color: rgb(60, 60, 60);
-	margin: 20px 0 20px 0;
+	margin: 20px 0 0 0;
 }
 
-#what-i-do p, #what-i-do li, #what-i-do a{
+#what-i-do p{
 	font-size: 16px;
 	font-family: Poppins;
 	color: rgb(60, 60, 60);
-}
-
-#what-i-do a:hover{
-  text-decoration: underline;
-}
-
-#what-i-do li i{
-  font-size: 12px;
-  color: rgb(27, 118, 242);
+	margin-top: 0;
 }
 
 @media (max-width: 800px){
@@ -47,6 +43,9 @@
 		float: none;
     width: 84%;
     padding-left: 8%;
+	}
+	#what-i-do .column:nth-of-type(2){
+  	width: 84%;
 	}
 	#what-i-do .column:last-of-type{
     margin-bottom: 60px;
